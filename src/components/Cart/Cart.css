@@ -1,0 +1,17 @@
+.cartBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 1px black;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+    width: 230px;
+}
+.cartImg {
+    width: 200px;
+}

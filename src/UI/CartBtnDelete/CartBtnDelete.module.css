@@ -1,0 +1,10 @@
+.deleteBtn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 0 0 0;
+}
+.deleteBtn:hover {
+    background: rgb(87, 84, 84);
+}

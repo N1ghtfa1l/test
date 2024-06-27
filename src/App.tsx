@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { IUser } from "./types/types";
+import PostService from "./API/PostService";
+import UserForm from "./components/UserForm/UserForm";
+import CartList from "./components/CartList.jsx/CartList";
 
 function App() {
+  const [user, setUser] = useState<IUser[]>([]); // массив с сервера
+
+  async function fetchUser() {
+    const users = await PostService.getAll();
+    setUser(users);
+  }
+
+  useEffect(() => {
+    fetchUser();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserForm user={user} setUser={setUser} />
+      <CartList user={user} setUser={setUser} />
     </div>
   );
 }
