@@ -3,5 +3,5 @@
 Для удаления нажать кнопку "удалить" 
 Сайт берет карточки с https://jsonplaceholder.typicode.com/
 html/css
-js/ts/react
+<p>js/ts/react</p>
 axios
