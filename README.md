@@ -2,6 +2,6 @@
 Для создание карточки, необходимо заполнить поля и нажать кнопку "добавить"
 Для удаления нажать кнопку "удалить" 
 Сайт берет карточки с https://jsonplaceholder.typicode.com/
-<p>html/css</p>
-js/ts/react
+html/css/
+js/ts/react/
 axios
